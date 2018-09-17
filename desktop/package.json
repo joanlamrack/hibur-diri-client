@@ -4,12 +4,15 @@
   "private": true,
   "dependencies": {
     "apollo-boost": "^0.1.16",
+    "apollo-cache-inmemory": "^1.2.10",
     "graphql": "^14.0.2",
     "graphql-tag": "^2.9.2",
     "react": "^16.5.1",
     "react-apollo": "^2.1.11",
     "react-dom": "^16.5.1",
-    "react-scripts": "1.1.5"
+    "react-scripts": "1.1.5",
+    "semantic-ui-css": "^2.4.0",
+    "semantic-ui-react": "^0.82.5"
   },
   "scripts": {
     "start": "react-scripts start",
