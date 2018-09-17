@@ -33,7 +33,6 @@ export default class EntertainmePage extends Component {
 				{({ loading, error, data }) => {
 					if (loading) return <p>Loading...</p>;
 					if (error) return <p>Error :(</p>;
-					console.log(data.allMovies.data);
 					return (
 						<Fragment>
 							<ItemList listItem={data.allMovies.data} listName="Film Lepas" />
