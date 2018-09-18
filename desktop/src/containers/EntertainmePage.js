@@ -1,35 +1,12 @@
 import React, { Component, Fragment } from "react";
 import ItemList from "../components/ItemList";
-import gql from "graphql-tag";
+import { getAll } from "../queries";
 import { Query } from "react-apollo";
 
 export default class EntertainmePage extends Component {
 	render() {
 		return (
-			<Query
-				query={gql`
-					{
-						allMovies {
-							data {
-								_id
-								title
-								overview
-								poster_path
-								popularity
-							}
-						}
-						allSeries {
-							data {
-								_id
-								title
-								overview
-								poster_path
-								popularity
-							}
-						}
-					}
-				`}
-			>
+			<Query query={getAll}>
 				{({ loading, error, data }) => {
 					if (loading) return <p>Loading...</p>;
 					if (error) return <p>Error :(</p>;

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Item, Icon } from "semantic-ui-react";
+import { Item, Icon, Button } from "semantic-ui-react";
+import { Mutation } from "react-apollo";
 
 export default class ItemOne extends Component {
 	render() {
@@ -13,6 +14,7 @@ export default class ItemOne extends Component {
 					<Item.Description>{this.props.overview}</Item.Description>
 					<Item.Extra>Additional Details</Item.Extra>
 				</Item.Content>
+				
 			</Item>
 		);
 	}
